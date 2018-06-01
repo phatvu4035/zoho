@@ -356,8 +356,38 @@ function customViewRecord($auth)
 
 }
 
-$result = customViewRecord($auth);
-var_dump($result);
+// $result = customViewRecord($auth);
+// var_dump($result);
+
+
+
+
+/**
+* Zoho Books
+* auth token: aa74916697804b5dddb975f8710364d8
+* Domain url : 24h
+* Redirect url : google.com 
+* client id: 1000.NK1A050CL9I256473QJJVTDTVBGGX2
+* fe6ac24ed1eba341277d90ec46980e3135054a6875
+* refresh_code: 1000.5ab3e93490c4066d1b62e1c1cba195e7.ac9eb336f9de65a665eacaba91f20a02
+*/
+
 
 ?>
+
+<?php 
+/*
+* ZohoCRM.modules.contacts.all 1000.a31449fa52e4d738ce12f28400f31d80.20c30a36a597e19539d724a74629bf79
+*/
+?>
+
+<form method="POST" action="https://accounts.zoho.com/oauth/v2/token">
+	<input type="text" name ="code" value="1000.71ab9b8deb8497e04edf85fffc175b39.2f2d768b22efd35152958ef452c01d5b">
+	<input type="text" name ="redirect_uri" id="scope" value="https://www.google.com/">
+	<input type="text" name="client_id" value="1000.0GHSX2BXOYAQ78948ZGWYL39XENF4H">
+	<input type="text" name="client_secret" value="3eeeeff7fdb0844ac01cf9d099219a91641d7f2255">
+	<input type="text" name="grant_type" value="authorization_code">
+
+	<input type="submit" value="Refresh Code">
+</form>
 
